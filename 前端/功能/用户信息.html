@@ -14,6 +14,39 @@
 	<![endif]-->	
 	</head>
 	<body style="padding-top: 90px;">
+		<script type="text/javascript">
+			function load(){//界面刷新时显示所有用户的信息
+				$.ajax({
+					type:'',
+					url:"",
+					data:{
+
+					},
+					success:function(){
+
+					},
+					error:function () {
+						alert("failed")
+
+					}
+				});
+			}
+			function commit(){//提交修改用户信息
+				$.ajax({
+					type:'',
+					url:"",
+					data:{
+
+					},
+					success:function(){
+
+					},
+					error:function () {
+                    	alert("failed")
+                	}
+				});
+			}
+		</script>
 		<!-- 上部导航栏 -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #660066;">
 			<div class="container-fluid" >
@@ -97,7 +130,7 @@
 								<div class="form-group" style="width: 550px; border:rgba(255, 255, 255, 0.103) 1px solid;box-shadow: 2px 7px 10px #660066;">
 									<label for="inputEmail3" class="col-sm-2 control-label" style="margin-left: 0px;">昵称</label>
 									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail3" />
+										<input type="text" class="form-control" id="inputEmail3" value=""  />
 									</div>
 								</div>
 								<!-- 修改密码 -->
@@ -111,35 +144,35 @@
 								<div class="form-group" style="width: 550px; border:rgba(255, 255, 255, 0.103) 1px solid;box-shadow: 2px 7px 10px #660066;">
 										<label for="inputEmail3" class="col-sm-2 control-label">性别</label>
 									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail3" />
+										<input type="text" class="form-control" id="inputEmail3" />
 									</div>
 								</div>
 								<!-- 修改生日 -->
 								<div class="form-group" style="width: 550px; border:rgba(255, 255, 255, 0.103) 1px solid;box-shadow: 2px 7px 10px #660066;">
 										<label for="inputEmail3" class="col-sm-2 control-label">生日</label>
 									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail3" />
+										<input type="text" class="form-control" id="inputEmail3" />
 									</div>
 								</div>
 								<!-- 修改所在地 -->
 								<div class="form-group" style="width: 550px; border:rgba(255, 255, 255, 0.103) 1px solid;box-shadow: 2px 7px 10px #660066;">
 										<label for="inputEmail3" class="col-sm-2 control-label">所在地</label>
 									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail3" />
+										<input type="text" class="form-control" id="inputEmail3" />
 									</div>
 								</div>
 								<!-- 修改学校 -->
 								<div class="form-group" style="width: 550px; border:rgba(255, 255, 255, 0.103) 1px solid;box-shadow: 2px 7px 10px #660066;">
 										<label for="inputEmail3" class="col-sm-2 control-label">学校</label>
 									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail3" />
+										<input type="text" class="form-control" id="inputEmail3" />
 									</div>
 								</div>
 							</form>
 						</div>
 						<!-- 保存修改按钮 -->
 						<div class="col-md-10 column">
-							<button style="border:#660066 5px solid; font-weight: bold; font-family:微软雅黑; color: rgb(255, 255, 255); margin-top: 50px;font-size: 18px;margin-left: 10px;background-color: #660066;">保存修改</button>
+							<button onclick="commit()" style="border:#660066 5px solid; font-weight: bold; font-family:微软雅黑; color: rgb(255, 255, 255); margin-top: 50px;font-size: 18px;margin-left: 10px;background-color: #660066;">保存修改</button>
 						</div>
 					</div>
 				</div>
