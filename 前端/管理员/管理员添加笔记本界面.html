@@ -8,6 +8,39 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body style="padding-top: 90px;">
+       <script type="text/javascript">
+              function load(){//界面刷新时显示所有用户的信息
+                     $.ajax({
+                            type:'',
+                            url:"",
+                            data:{
+
+                            },
+                            success:function(){
+
+                            },
+                            error:function () {
+                                   alert("failed")
+
+                            }
+                     });
+              }
+              function addcomputer(){//添加新的电脑
+                     $.ajax({
+                            type:'',
+                            url:"",
+                            data:{
+
+                            },
+                            success:function(){
+
+                            },
+                            error:function () {
+                                   alert("failed")
+                            }
+                     })
+              }	
+       </script>
 		<!-- 上部导航栏 -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #660066;">
 			<div class="container-fluid" >
@@ -62,10 +95,10 @@
 		    <div id="collapseOne" class="panel-collapse collapse in">
 			    <div class="panel-body">
 					<div class="list-group">
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">热点资讯</a>
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">硬件匹配</a>
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">关键字匹配</a>
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">电脑猎场</a>
+                                          <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">编辑文章</a>
+                                          <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">更新硬件</a>
+                                          <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">新增硬件</a>
+                                          <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">添加整机</a>
 					</div>
 			    </div>
 		    </div>
@@ -80,7 +113,7 @@
                  <h3 >更改产品：</h>
              </div>
              <div class="col-md-8">
-                    <input type="text" 
+                    <input class="xx" type="text" 
                     list="computername" 
                     placeholder="惠普暗影精灵2" 
                     style="color: black; 
@@ -103,7 +136,7 @@
                     <h3 style="margin-left:15px;">产品名称：</h>
              </div>
              <div class="col-md-2">
-                <input type="text" 
+                <input class="xx" type="text" 
                 placeholder="例：惠普暗影精灵2" 
                 style="color: black; 
                 font-weight: bold; 
@@ -116,7 +149,7 @@
                     <h3>产品价格：</h>
              </div>
              <div class="col-md-2">
-                    <input type="text" 
+                    <input class="xx" type="text" 
                     placeholder="例：10000" 
                     style="color: black; 
                     font-weight: bold; 
@@ -133,7 +166,7 @@
                             <h3>产品关键字：</h>
                      </div>
                      <div class="col-md-2">
-                            <input type="text" 
+                            <input class="xx" type="text" 
                             list="keyword"
                             placeholder="" 
                             style="color: black; 
@@ -145,7 +178,7 @@
                      </div>
 
                      <div class="col-md-2">
-                            <input type="text" 
+                            <input class="xx" type="text" 
                             list="keyword"
                             placeholder="" 
                             style="color: black; 
@@ -158,7 +191,7 @@
                      </div>
 
                      <div class="col-md-2">
-                            <input type="text" 
+                            <input class="xx" type="text" 
                             list="keyword"
                             placeholder="" 
                             style="color: black; 
@@ -189,7 +222,7 @@
                         <h3>RAM:</h3>
                     </div>
                     <div class="col-md-2">
-                            <input type="text" 
+                            <input class="xx" type="text" 
                             list="CPU"
                             placeholder="" 
                             style="color: black; 
@@ -199,7 +232,7 @@
                             margin-left: 50px;
                             margin-top: 20px">
                            
-                           <input type="text" 
+                           <input class="xx" type="text" 
                             list="RAM"
                             placeholder="" 
                             style="color: black; 
@@ -231,7 +264,7 @@
                             <h3>HDD:</h3>
                         </div>
                         <div class="col-md-2">
-                                <input type="text" 
+                                <input class="xx" type="text" 
                                 list="VC"
                                 placeholder="" 
                                 style="color: black; 
@@ -241,7 +274,7 @@
                                 margin-left: 50px;
                                 margin-top: 20px">
                                
-                               <input type="text" 
+                               <input class="xx" type="text" 
                                 list="HDD"
                                 placeholder="" 
                                 style="color: black; 
@@ -276,7 +309,7 @@
                     </h3>
                 </div>
                 <div class="col-md-8">
-                    <input type="text"
+                    <input class="xx" type="text"
                     style="color: black; 
                             font-weight: bold; 
                             width: 70%; 
@@ -294,8 +327,8 @@
                              <div class="col-md-1"></div>
                              <div class="col-md-1"></div>
                              <div class="col-md-1"></div>
-                             <div class="col-md-1"><button class="btn btn-default" type="button" style="width:100px;">添加</button></div>
-                             <div class="col-md-1"><button class="btn btn-default" type="button" style="width:100px;">取消</button></div>
+                             <div class="col-md-1"><button onclick="addcomputer()" class="btn btn-default" type="button" style="width:100px;">添加</button></div>
+                             <div class="col-md-1"><button class="btn btn-default" type="button" style="width:100px;" onclick="$('.xx').val('');">取消</button></div>
                              <div class="col-md-1"></div>
                              <div class="col-md-1"></div>
                              <div class="col-md-1"></div>

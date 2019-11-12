@@ -11,6 +11,39 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body style="padding-top: 90px">
+    <script type="text/javascript">
+        function load(){//界面刷新时显示所有用户的信息
+            $.ajax({
+                type:'',
+                url:"",
+                data:{
+
+                },
+                success:function(){
+
+                },
+                error:function () {
+                    alert("failed")
+
+                }
+            });
+        }
+        function addhardware(){//新增硬件信息
+            $.ajax({
+                type:'',
+                url:"",
+                data:{
+
+                },
+                success:function(){
+
+                },
+                error:function () {
+                    alert("failed")
+                }
+            })
+        }	
+    </script>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #660066;">
         <div class="container-fluid" >
             <div class="navbar-header">
@@ -65,9 +98,10 @@
                 <div id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="list-group">
-                            <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">热点资讯</a>
+                            <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">编辑文章</a>
                             <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">更新硬件</a>
-                            <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">更新电脑</a>
+                            <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">新增硬件</a>
+                            <a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">添加整机</a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +141,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-1">
-                <button type="button" class="btn btn-default" style="width: 100px;height: 30px;font-size: medium">添加</button>
+                <button onclick="addhardware" type="button" class="btn btn-default" style="width: 100px;height: 30px;font-size: medium">添加</button>
             </div>
             <div class="col-md-1">
                 <button type="button" class="btn btn-default" style="width: 100px;height: 30px;font-size: medium">取消</button>

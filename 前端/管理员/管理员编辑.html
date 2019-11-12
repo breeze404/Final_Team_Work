@@ -14,6 +14,39 @@
 	<![endif]-->	
 	</head>
 	<body style="padding-top: 90px;">
+		<script type="text/javascript">
+			function load(){//界面刷新时显示所有用户的信息
+				$.ajax({
+					type:'',
+					url:"",
+					data:{
+
+					},
+					success:function(){
+
+					},
+					error:function () {
+						alert("failed")
+
+					}
+				});
+			}
+			function upload(){//上传新的文章
+				$.ajax({
+					type:'',
+					url:"",
+					data:{
+
+					},
+					success:function(){
+
+					},
+					error:function () {
+                    	alert("failed")
+                	}
+				})
+			}	
+		</script>
 		<!-- 上部导航栏 -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #660066;">
 			<div class="container-fluid" >
@@ -68,10 +101,10 @@
 		    <div id="collapseOne" class="panel-collapse collapse in">
 			    <div class="panel-body">
 					<div class="list-group">
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">热点资讯</a>
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">硬件匹配</a>
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">关键字匹配</a>
-						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">电脑猎场</a>
+						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">编辑文章</a>
+						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">更新硬件</a>
+						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">新增硬件</a>
+						<a class="list-group-item" style="color: rgb(117, 75, 187); font-size: 19px;" href="#">添加整机</a>
 					</div>
 			    </div>
 		    </div>
@@ -131,10 +164,9 @@
 			</form>
 			<div class="col-md-10"></div>
 			<div class="col-md-2">
-					<button type="button" class="btn btn-primary">提交</button>
-					<button type="button" class="btn btn-primary" style="background-color: #e70f50;">取消</button>
+					<button onclick="upload()" type="button" class="btn btn-primary">提交</button>
+					<button type="button" class="btn btn-primary" style="background-color: #e70f50;" onclick="$('.form-control').val('');">取消</button>
 			</div>
-			
 		</div>
 	</body>
 </html>
