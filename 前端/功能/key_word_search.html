@@ -18,7 +18,23 @@
       <![endif]-->
    </head>
    <body style="padding-top: 90px;">
+        <script type="text/javascript">
+            function searchcomputer(){
+                $.ajax({
+                    type:'',
+                    url:"",
+                    data:{
 
+                    },
+                    success:function(){
+
+                    },
+                    error:function () {//弹窗，后面可以删除
+                        alert("failed")
+                    }
+                })
+            }
+        </script>
         <div class="container-fluid">
         <!--导航栏-->
             <div class="row-fluid">
@@ -113,7 +129,7 @@
 					<a href="" style="margin-left:50%"><font style="font-size:25px;" color="#169BD5">没有找到关键字？换一批</font></a>
 					<br/>
 					<br/>
-					<button type="button" class="btn btn-primary" style="margin-left: 40%;width: 80px;height: 40px;background-color: #FFCCCC;color: #660066;border: none"><strong>查找</strong></button>
+					<button onclick="searchcomputer()" type="button" class="btn btn-primary" style="margin-left: 40%;width: 80px;height: 40px;background-color: #FFCCCC;color: #660066;border: none"><strong>查找</strong></button>
 					<button onclick="nclear()" type="button" class="btn btn-primary" style="margin-left: 10%;width: 80px;height: 40px;background-color: #CCCCFF;color: #660066;border: none"><strong>清空</strong></button>
 					<br/>
 				</div>
