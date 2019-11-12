@@ -19,7 +19,38 @@
       <![endif]-->
    </head>
    <body style="padding-top: 90px;">
+    <script type="text/javascript">
+        function computerinfo(){//电脑的具体信息
+            $.ajax({
+                type:'',
+                url:"",
+                data:{
+                    
+                },
+                success:function(){
 
+                },
+                error:function () {//弹窗，后面可以删除
+                    alert("failed")
+                }
+            })
+        }
+        function purchaseweb(){//购买网页的跳转
+            $.ajax({
+                type:'',
+                url:"",
+                data:{
+
+                },
+                success:function(){
+
+                },
+                error:function () {//弹窗，后面可以删除
+                    alert("failed")
+                }
+            })
+        }
+    </script>
     <div class="container-fluid">
          <!--导航栏-->
          <div class="row-fluid">
@@ -102,7 +133,7 @@
                              <img src="https://media.hpstore.cn/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/7/H/7HR15PA-1_T1560136933.png" class="media-object" style="width:200px;height: 200px;">
                           </div>
                           <div class="media-body">
-                             <a> <h2 class="media-heading">惠普(HP)OMEN X by 15-dg0003TX 幻影精灵X 15.6英寸游戏笔记本电脑(i7-9750H 8G*2 512GSSD*2 RTX2080 8G独显 144Hz)</h2> </a>
+                             <a onclick="computerinfo()"> <h2 class="media-heading">惠普(HP)OMEN X by 15-dg0003TX 幻影精灵X 15.6英寸游戏笔记本电脑(i7-9750H 8G*2 512GSSD*2 RTX2080 8G独显 144Hz)</h2> </a>
                              <p style="font-size: 20px;">创新双屏设计
                                    键盘上方安装了业内前沿的 6 英寸 1080p 触摸屏，让您随时随地享受双屏显示器带来的便利。在第二个屏幕上，可在不中断游戏的情况下显示其他应用（比如 Twitch、Discord、Spotify、OMEN Command Center 等），让您流畅地进行使用。
 
@@ -112,10 +143,10 @@
                                 <div class="col-md-6">
                                 </div>
                                 <div class="col-md-6 " style="margin-right: 0px;">
-                                      <a class="btn" href="#" style="font-size: 20px;">京东</a>
-                                      <a class="btn" href="#" style="font-size: 20px;">淘宝</a>
-                                      <a class="btn" href="#" style="font-size: 20px;">官方商城</a>
-                                      <a class="btn" href="#" style="font-size: 20px;">历史价格波动图</a>
+                                      <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">京东</a>
+                                      <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">淘宝</a>
+                                      <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">官方商城</a>
+                                      <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">历史价格波动图</a>
                                 </div>
                              </div>
                           </div>
@@ -126,7 +157,7 @@
                                   <img src="https://media.hpstore.cn/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/7/H/7HR15PA-1_T1560136933.png" class="media-object" style="width:200px;height: 200px;">
                              </div>
                              <div class="media-body">
-                                      <a> <h2 class="media-heading">惠普(HP)OMEN X by 15-dg0003TX 幻影精灵X 15.6英寸游戏笔记本电脑(i7-9750H 8G*2 512GSSD*2 RTX2080 8G独显 144Hz)</h2> </a>
+                                      <a onclick="computerinfo()"> <h2 class="media-heading">惠普(HP)OMEN X by 15-dg0003TX 幻影精灵X 15.6英寸游戏笔记本电脑(i7-9750H 8G*2 512GSSD*2 RTX2080 8G独显 144Hz)</h2> </a>
                                       <p style="font-size: 20px;">创新双屏设计
                                           键盘上方安装了业内前沿的 6 英寸 1080p 触摸屏，让您随时随地享受双屏显示器带来的便利。在第二个屏幕上，可在不中断游戏的情况下显示其他应用（比如 Twitch、Discord、Spotify、OMEN Command Center 等），让您流畅地进行使用。
 
@@ -136,10 +167,10 @@
                                           <div class="col-md-6">
                                           </div>
                                           <div class="col-md-6 " style="margin-right: 0px;">
-                                              <a class="btn" href="#" style="font-size: 20px;">京东</a>
-                                              <a class="btn" href="#" style="font-size: 20px;">淘宝</a>
-                                              <a class="btn" href="#" style="font-size: 20px;">官方商城</a>
-                                              <a class="btn" href="#" style="font-size: 20px;">历史价格波动图</a>
+                                              <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">京东</a>
+                                              <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">淘宝</a>
+                                              <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">官方商城</a>
+                                              <a class="btn" href="#" style="font-size: 20px;" onclick="purchaseweb()">历史价格波动图</a>
                                           </div>
                                       </div>
                                   </div>
